@@ -336,7 +336,7 @@ add_filter("pmpro_confirmation_message", "pmpro_affiliates_pmpro_confirmation_me
 //add affiliates page to admin
 function pmpro_affiliates_add_pages()
 {
-	add_submenu_page('pmpro-membershiplevels', 'Affiliates', 'Affiliates', 'manage_options', 'pmpro-affiliates', 'pmpro_affiliates_adminpage');
+	add_submenu_page('pmpro-dashboard', 'Affiliates', 'Affiliates', 'manage_options', 'pmpro-affiliates', 'pmpro_affiliates_adminpage');
 }
 add_action('admin_menu', 'pmpro_affiliates_add_pages', 20);
 
